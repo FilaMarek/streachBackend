@@ -1,0 +1,9 @@
+D:\My projects\streachBackend\streachBackend.Data\bin\Debug\netcoreapp3.1\streachBackend.Data.deps.json
+D:\My projects\streachBackend\streachBackend.Data\bin\Debug\netcoreapp3.1\streachBackend.Data.dll
+D:\My projects\streachBackend\streachBackend.Data\bin\Debug\netcoreapp3.1\streachBackend.Data.pdb
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.csprojAssemblyReference.cache
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.AssemblyInfoInputs.cache
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.AssemblyInfo.cs
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.csproj.CoreCompileInputs.cache
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.dll
+D:\My projects\streachBackend\streachBackend.Data\obj\Debug\netcoreapp3.1\streachBackend.Data.pdb

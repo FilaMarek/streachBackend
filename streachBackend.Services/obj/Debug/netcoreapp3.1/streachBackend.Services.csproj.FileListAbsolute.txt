@@ -1,0 +1,12 @@
+D:\My projects\streachBackend\streachBackend.Services\bin\Debug\netcoreapp3.1\streachBackend.Services.deps.json
+D:\My projects\streachBackend\streachBackend.Services\bin\Debug\netcoreapp3.1\streachBackend.Services.dll
+D:\My projects\streachBackend\streachBackend.Services\bin\Debug\netcoreapp3.1\streachBackend.Services.pdb
+D:\My projects\streachBackend\streachBackend.Services\bin\Debug\netcoreapp3.1\streachBackend.Data.dll
+D:\My projects\streachBackend\streachBackend.Services\bin\Debug\netcoreapp3.1\streachBackend.Data.pdb
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.csprojAssemblyReference.cache
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.AssemblyInfoInputs.cache
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.AssemblyInfo.cs
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.csproj.CoreCompileInputs.cache
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.csproj.CopyComplete
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.dll
+D:\My projects\streachBackend\streachBackend.Services\obj\Debug\netcoreapp3.1\streachBackend.Services.pdb
