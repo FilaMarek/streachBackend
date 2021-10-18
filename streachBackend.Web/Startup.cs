@@ -19,6 +19,7 @@ namespace streachBackend.Web
 {
     public class Startup
     {
+ 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,6 +30,16 @@ namespace streachBackend.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:8080");
+                    });
+            });
+
 
             services.AddControllers();
             services.AddDbContext<StreachDbContext>(
@@ -59,6 +70,8 @@ namespace streachBackend.Web
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

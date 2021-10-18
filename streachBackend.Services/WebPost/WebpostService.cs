@@ -9,6 +9,7 @@ namespace streachBackend.Services.WebPost
 {
     public class WebpostService : IWebpost
     {
+
         private readonly StreachDbContext _db;
         public WebpostService(StreachDbContext dbContext)
         {

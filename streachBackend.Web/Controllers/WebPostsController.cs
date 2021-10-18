@@ -16,14 +16,15 @@ namespace streachBackend.Web.Controllers
         private readonly ILogger<WebPostsController> _logger;
         private readonly IWebpost _webpostService;
         public WebPostsController(
+
             ILogger<WebPostsController> logger, IWebpost webpostService)
         {
             _logger = logger;
             _webpostService = webpostService;
         }
 
-        [HttpGet("/api/post")]
-        public ActionResult GetPost(){
+            [HttpGet("/api/post")]
+            public ActionResult GetPost(){
             _logger.LogInformation("Getting all posts");
            var posts =  _webpostService.GetAllPosts();
             var PostViewModels = posts.Select(PostMapper.SerializePostModel);
