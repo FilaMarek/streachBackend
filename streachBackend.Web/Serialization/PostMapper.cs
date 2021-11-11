@@ -15,7 +15,8 @@ namespace streachBackend.Web.Serialization
                 Id = posts.Id,
                 CreatedOn = posts.CreatedOn,
                 UpdatedOn = posts.UpdatedOn,
-                PostBody = posts.PostBody
+                PostBody = posts.PostBody,
+                AuthorName = posts.AuthorName,
             };
         }
         public static Data.Models.WebPosts SerializePostModel(PostModel posts)
@@ -25,7 +26,8 @@ namespace streachBackend.Web.Serialization
                 Id = posts.Id,
                 CreatedOn = posts.CreatedOn,
                 UpdatedOn = posts.UpdatedOn,
-                PostBody = posts.PostBody
+                PostBody = posts.PostBody,
+                AuthorName = posts.AuthorName,
             };
         }
 

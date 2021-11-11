@@ -11,5 +11,6 @@ namespace streachBackend.Web.ViewModels
         public DateTime CreatedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
         public string PostBody { get; set; }
+        public string AuthorName { get; set; }
     }
 }
