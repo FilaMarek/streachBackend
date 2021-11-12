@@ -226,6 +226,9 @@ namespace streachBackend.Data.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("timestamp without time zone");
 
+                    b.Property<double>("Kudos")
+                        .HasColumnType("double precision");
+
                     b.Property<string>("PostBody")
                         .HasColumnType("text");
 

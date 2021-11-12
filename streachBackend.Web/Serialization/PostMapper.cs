@@ -17,6 +17,7 @@ namespace streachBackend.Web.Serialization
                 UpdatedOn = posts.UpdatedOn,
                 PostBody = posts.PostBody,
                 AuthorName = posts.AuthorName,
+                Kudos = posts.Kudos,
             };
         }
         public static Data.Models.WebPosts SerializePostModel(PostModel posts)
@@ -28,6 +29,7 @@ namespace streachBackend.Web.Serialization
                 UpdatedOn = posts.UpdatedOn,
                 PostBody = posts.PostBody,
                 AuthorName = posts.AuthorName,
+                Kudos = posts.Kudos,
             };
         }
 
