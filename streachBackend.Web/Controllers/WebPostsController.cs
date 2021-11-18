@@ -8,37 +8,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// definition of endpoints and turns on the webpostServices
+
 namespace streachBackend.Web.Controllers
 {
     [ApiController]
     public class WebPostsController : ControllerBase
-        {
+    {
         private readonly ILogger<WebPostsController> _logger;
         private readonly IWebpost _webpostService;
-        public WebPostsController(
+        public WebPostsController(ILogger<WebPostsController> logger, IWebpost webpostService)
 
-            ILogger<WebPostsController> logger, IWebpost webpostService)
         {
             _logger = logger;
             _webpostService = webpostService;
         }
 
-            [HttpGet("/api/post")]
-            public ActionResult GetPost(){
+
+
+        [HttpGet("/api/post")]
+        public ActionResult GetPost() {
             _logger.LogInformation("Getting all posts");
-           var posts =  _webpostService.GetAllPosts();
+            var posts = _webpostService.GetAllPosts();
             var PostViewModels = posts.Select(PostMapper.SerializePostModel);
             return Ok(PostViewModels);
-            }
+        }
 
-            [HttpPost("/api/post")]
-            public ActionResult GenerateNewPost([FromBody]PostModel post)
-            {
+
+
+        [HttpPost("/api/post")]
+        public ActionResult GenerateNewPost([FromBody] PostModel post)
+        {
             _logger.LogInformation("Generating new Post");
             var newPost = PostMapper.SerializePostModel(post);
             var newPostResponse = _webpostService.CreatePost(newPost);
             return Ok(newPost);
-            }
-
         }
+
+        [HttpPost("/api/kudos")]
+        public ActionResult UpdateKudos([FromBody] PostModel post)
+        {
+            _logger.LogInformation("Kudosing a post");  
+            var kudosedPost = PostMapper.SerializePostModel(post);
+            _webpostService.UpdateKudos(kudosedPost.Id);
+            return Ok("Post was Kudosed");
+        }
+    }
 }
+

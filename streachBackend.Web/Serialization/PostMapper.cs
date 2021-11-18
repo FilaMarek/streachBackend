@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+// mapping entrance to db and from to frontend
+
+
 namespace streachBackend.Web.Serialization
 {
     public static class PostMapper

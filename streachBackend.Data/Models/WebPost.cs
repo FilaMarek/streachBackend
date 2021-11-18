@@ -11,6 +11,6 @@ namespace streachBackend.Data.Models
         public DateTime UpdatedOn { get; set; }
         public string PostBody { get; set; }
         public string AuthorName { get; set; }
-        public Double Kudos { get; set; }
+        public double Kudos { get; set; }
     }
 }

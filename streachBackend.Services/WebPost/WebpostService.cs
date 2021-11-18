@@ -1,9 +1,12 @@
-﻿using streachBackend.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using streachBackend.Data;
 using streachBackend.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
+// component that is responsible for talking to DB
 
 namespace streachBackend.Services.WebPost
 {
@@ -17,7 +20,6 @@ namespace streachBackend.Services.WebPost
         }
         ServiceResponse<Data.Models.WebPosts> IWebpost.CreatePost(Data.Models.WebPosts webPost)
         {
-
             try
             {
                 _db.WebPosts.Add(webPost);
@@ -39,10 +41,7 @@ namespace streachBackend.Services.WebPost
                     Message = "Error has occurd new post was not saved",
                     IsSuccess = false
                 };
-
-
             };
-
         }
 
         List<Data.Models.WebPosts> IWebpost.GetAllPosts()
@@ -53,6 +52,11 @@ namespace streachBackend.Services.WebPost
         Data.Models.WebPosts IWebpost.GetWebPostByID(int id)
         {
             return _db.WebPosts.Find(id);
+        }
+
+        void IWebpost.UpdateKudos(int id)
+        {
+            _db.Database.ExecuteSqlRaw("UPDATE public.\"WebPosts\" SET \"Kudos\" = \"Kudos\" + 1 WHERE \"Id\" =" + id);
         }
     }
 }
